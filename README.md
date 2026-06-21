@@ -1,6 +1,6 @@
-# HecatePEP: A machine learning strategy to predict peptide toxicity
+# NoiTox: A machine learning strategy to predict peptide toxicity
 
-**HecatePEP** is a machine learning pipeline developed to predict whether a given peptide sequence has citotoxic properties.  
+**NoiTox** is a machine learning pipeline developed to predict whether a given peptide sequence has citotoxic properties.  
 This repository contains all code, datasets, models, and outputs necessary to reproduce the training process, make new predictions, and evaluate model performance.
 
 ---
@@ -14,7 +14,7 @@ This repository contains all code, datasets, models, and outputs necessary to re
 
 ├── Independent/          # The independent dataset
 
-├── HecatePEP.py           # Main script: feature extraction, model training, and prediction
+├── NoiTox.py           # Main script: feature extraction, model training, and prediction
 
 ├── utils.py               # Helper functions for feature extraction
 
@@ -39,14 +39,14 @@ source hecate-env/bin/activate  # On Windows use: hecate-env\Scripts\activate
 ```bash
 pip install -r requirements.txt
 ```
-## How to Run HecatePEP
+## How to Run NoiTox
 
 ### 1. Predicting New Sequences
 
 Execute the main script:
 
 ```bash
-python HecatePEP.py
+python NoiTox.py
 ```
 
 You will see the following menu:
@@ -75,7 +75,7 @@ Also, a cpps_test_matrix.csv was save to, with all sequences and the respective 
 
 ### 2. Training a New Model (Optional)
 
-If you wish to retrain the model using your own datasets, select option 1 - TRAINING MODEL after executing HecatePEP.py.
+If you wish to retrain the model using your own datasets, select option 1 - TRAINING MODEL after executing NoiTox.py.
 
 You will be prompted to provide:
 * The path to your positive dataset (sequences labeled as CPPs)
