@@ -1,0 +1,22 @@
+# NoiTox — Python dependencies
+#
+# Package names and versions below cover everything imported by
+# NoiToxML.py, NoiToxDP.py, NoiToxGP.py, and NoiTox.py. Versions are
+# pinned to the exact environment used to train and evaluate the final
+# models reported in the manuscript.
+
+numpy==1.26.4
+pandas==2.2.2
+scikit-learn==1.4.2
+scipy==1.13.0
+biopython==1.83
+torch==2.10.0
+torch-geometric==2.7.0
+fair-esm==1.0.3
+Boruta==0.4.3
+
+# ── CUDA / hardware notes ──────────────────────────────────────────────────
+# TODO: add your Python version (python --version) and, if you trained on
+# GPU, the CUDA version (first line of `nvidia-smi`) here, since the torch
+# and torch-geometric wheels are CUDA-version-specific and pip will install
+# a CPU-only build by default unless the matching CUDA wheel index is used.
